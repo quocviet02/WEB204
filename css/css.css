@@ -1,0 +1,501 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+   font-family:'Roboto', sans-serif; 
+}
+
+.boxcenter{
+    width:90%;
+    margin:0 auto;
+}
+.row{
+  display:flex;
+  width:100%;
+}
+.row2{
+float:left;
+    width:100%;
+}
+.mb{
+    margin-bottom:30px;
+}
+.mb10{
+    margin-bottom:10px;
+}
+  /* CSS CHO PHẦN HEADER */
+.header{
+    background:aqua;
+    border:1px solid #000;
+    font-size:16px;
+    padding:5px;
+}
+.menu{
+    background:black;
+    border:1px solid #000;
+   
+    padding:5px;
+    height:33px;
+
+}
+.menu ul{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  }
+.menu ul li{
+  list-style:none;
+}
+.menu li a{
+  color:white;
+  text-decoration:none;
+}
+.menu li a:hover,.dropdown:hover .dropbtn{
+ background-color:rgb(225,0,43);
+ padding:13px 0;
+}
+.dropdown_content{
+    display:none;
+    position:absolute;
+    background-color: #98FB98;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.dropdown_content a{
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+
+}
+.dropdown_content a:hover{
+    background-color: #98FB98;
+}
+.dropdown:hover .dropdown_content{
+    display:block;
+    margin-top:13px; 
+}
+   /* css cho phần nội dung */
+.catalog{
+    display:flex;
+    gap:30px;
+}
+
+.boxleft{
+    width:75%;
+}
+.boxright{
+   
+    width:25%;
+}
+.box_title{
+    display:flex;
+   
+    background:#EEEE;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding:10px;
+    color:#333;
+    height:30px;
+    align-items:center;
+   
+}
+.box_content{
+    
+    
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    min-height:200px;
+    padding:20px;
+}
+.box_content2{
+    padding:20px;
+    background:#EEEE;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    min-height:200px;
+     
+}
+
+.box_footer{
+        background:#EEEE;
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;  
+        padding:10px;
+        color:#333;
+        height:30px;
+        align-items:center;
+}
+.banner{
+    width:100%;
+    min-width:300px;  
+    text-align:center;
+    position:relative;
+}
+.banner img{
+width:100%;
+height:300px;
+}
+.pre, .next{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    padding:16px;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease-in-out;
+    border-radius:0 3px 3px 0;
+    border:none;
+    
+}
+.pre:hover, .next:hover{
+    background-color:rgba(0,0,0,0.8);
+}
+.next{
+    right:0;
+    border-radius:3px 0 0 3px;
+}
+.pre{
+    left:0;
+    border-radius:0 3px 3px 0;
+}
+.items{
+    width:95%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+}
+.box_items{
+    border:1px solid #EEEE;
+    border-radius:5px;
+    text-align:center;
+    height:360px;
+    position:relative;
+    overflow:hidden;
+}
+.box_items img{
+   width:100%;
+   height:250px;
+   border-radius:10px;
+}
+.box_items a{
+    text-decoration:none;
+    color:black;
+  
+}
+.box_items .item_name{
+    margin-top:10px;
+   font-size:20px;
+   font-weight:bold;
+
+}
+.box_items .price{
+    margin:10px 0;
+  color:red;
+  font-weight:500;
+
+}
+.box_items_img:hover .add{
+  width:92%;
+ bottom:30.66%;
+}
+.box_items_img .add{
+ 
+    position:absolute;
+    bottom:-100%;
+   
+padding:10px;
+background-color:aqua;
+border-radius:6px;
+margin-top:20px;
+
+}
+form{
+    text-align:center;
+}
+.form_li a{
+    text-decoration: none;
+    color:black;
+}
+.form_li a:hover{
+    text-decoration: underline;
+    color:red;
+}
+.form_li{
+   list-style: none;
+}
+.form_account{
+  line-height: 150%;
+}
+.form_account input[type="email"],
+.form_account input[type="text"],
+.form_account input[type="password"],
+.form_content input[type="text"]{
+  width:100%;
+  border:1px solid #ccc;
+  border-radius:5px ;
+  padding:6px 10px;
+  margin-bottom:12px;
+}
+.form_account input[type="checkbox"]{
+  border-radius:5px ;
+}
+.form_account input[type="reset"],
+.form_account input[type="submit"],
+.form_content input[type="submit"],
+.form_content input[type="reset"],
+.form_content input[type="button"]{
+    padding:6px;
+    background:white;
+    border:1px solid #CCC;
+    border-radius:5px;
+}
+.form_account input[type="submit"]:hover,
+.form_content input[type="submit"]:hover,
+.form_content input[type="reset"]:hover,
+.form_content input[type="button"]:hover{
+    background:#CCC;
+}
+     /*  CSS CHO PHẦN DANH MỤC */
+.product_portfolio ul{
+margin:0;
+list-style-type:none;
+padding:0;
+}
+.product_portfolio ul li{
+padding:10px 20px;
+background-color:#EEEE;
+border-bottom:1px #ccc solid;
+}
+.product_portfolio ul li a{
+text-decoration:none;
+color:#000;
+}
+.product_portfolio ul li:hover{
+
+background-color:#CCC;
+}
+.box_search input{
+    margin-top:9px;
+padding:5px 10px;
+background-color:#ffff;
+border-radius:5px;
+border:1px #ccc solid;
+}
+.selling_products img{
+width:20%;
+height:50px;
+margin-right:10px;
+}
+.selling_products a{
+    color:#000;
+    text-decoration:none;
+}
+.selling_products a:hover{
+    color:#000;
+    text-decoration:underline;
+}
+.banner2 img{
+width:60%;
+}
+
+/* CSS CHO ADMIN */
+.header_admin{
+    background-color:#EEE;
+    border:1px #CCC solid;
+    color:#666;
+    border-radius:5px;
+    padding:10px 20px;
+    
+}
+.header_admin h1{
+font-size:2vv;
+}
+.font_title{
+    background-color:#EEE;
+    border:1px #CCC solid;
+    color:#666;
+    border-radius:5px;
+    padding:10px 20px;
+}
+.mr20{
+   margin-right:10px;
+}
+ label{
+   display:flex;
+   justify-content:start;
+    font-size:20px;
+    color:red;
+    margin-top:5px;
+}
+.formds_loai table{
+    width:100%;
+    border-collapse:collapse;
+     background-color:#ccc;
+   
+        padding:20px;
+}
+.formds_loai table td {
+    padding:10px 20px;
+    border:1px #ccc solid;
+    padding:30px;
+}
+.box_footer{
+    margin-top:300px;
+}
+/* footer section starts */
+#footer {
+    font-family: BalloExtra;
+    height: auto;
+    padding-bottom: 40px;
+    background-image: linear-gradient(
+        rgba(51, 51, 51, 0.86),
+        rgba(51, 51, 51, 0.86)
+      ),
+      url("./img/anh2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+  }
+  #footer,
+  .footer-left,
+  .footer-right {
+    display: flex;
+  }
+  
+  .footer-left,
+  .footer-right {
+    margin-top: 3rem;
+  }
+  
+  .footer-left {
+    padding-left: 12%;
+    align-items: center;
+    width: 65%;
+  }
+  .footer-right {
+    margin-top: 3.5rem;
+    gap: 3rem;
+    padding-right: 12%;
+    width: 35%;
+  }
+  
+  #footer h3 {
+    font-family: BalooExtra;
+    text-align: start;
+    color: var(--yellow-color);
+  }
+  
+  #footer p,
+  #footer a {
+    font-family: Barlow;
+    color: #ffff;
+    text-align: start;
+  }
+  #footer a {
+    text-decoration: none;
+    display: block;
+    line-height: 1.8rem;
+  }
+  .footer-left .footer-logo {
+    width: 45%;
+    margin-right: 2.3rem;
+  }
+  
+  .footer-logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+  #footer i {
+    color: var(--yellow-color);
+  }
+  
+  #footer .card_1 {
+    width: 70%;
+  }
+  
+  .card_1 {
+    width: 70%;
+    margin: 0;
+  }
+  
+  .card_1 div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card_1 div p,
+  .card_1 p {
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+    line-height: 2rem;
+    display: block;
+    text-align: start;
+  }
+  
+  .icons i {
+    font-size: 1.5rem;
+    margin-left: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+  }
+  
+  #footer .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #footer .image {
+    width: 8rem;
+    height: 2.5rem;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.2rem;
+  }
+  .image_3 {
+    height: 3rem !important;
+    width: 10rem;
+    margin-top: 0.5rem;
+  }
+  /* footer section ends */
+  .spct{
+    text-align: center;
+  }
+
+
+.table_cmt{
+  width:850px;
+  
+}
+
+.table_cart{
+  width:650px;
+  
+}
